@@ -1,0 +1,476 @@
+    body {
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20pt;
+        color: white;
+        background-color: black;
+
+
+    }
+
+    #mainContainer {
+        display: grid;
+        height: 180vh;
+        width: 100vw;
+        grid-template-rows: 20vh 60vh 10vh 10vh 70vh 10vh;
+        grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    }
+
+    aside {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 5;
+        background-color: black;
+        display: grid;
+        grid-template-rows: 35vh 10vh 10vh 10vh 10vh;
+        grid-template-columns: 100%;
+        font-size: 25pt;
+    }
+
+    aside>a {
+        align-self: center;
+        text-decoration: none;
+        width: 70%;
+        justify-self: center;
+        color: white;
+    }
+
+    aside>a>span>i {
+        position: relative;
+    }
+
+    a:hover {
+        color: #cd1141;
+    }
+
+    #bullslogo {
+        grid-row: 1 / span 1;
+        align-self: center;
+        justify-self: center;
+        width: 240px;
+        height: 240px;
+        background: #c5c5c5;
+        border-radius: 50%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #bullslogo:hover {
+        background-color: red;
+    }
+
+    a>span>i {
+        padding-right: 15px;
+    }
+
+    #team {
+
+        grid-row: 2/ span 1;
+    }
+
+    #schedule {
+        grid-row: 3 / span 1;
+
+    }
+
+    #news {
+        grid-row: 4 / span 1;
+    }
+
+    #tickets {
+        grid-row: 5 / span 1;
+    }
+
+
+    #showcase {
+        grid-row: 1 / span 3;
+        grid-column: 2 / span 5;
+        background-image: url("./Images/2-3-Zach-16x9-1.jpg");
+        background-size: cover;
+        font-size: xxx-large;
+    }
+
+    #caption {
+        display: inline-block;
+        position: relative;
+        top: 30%;
+        left: 10%;
+        font-family: 'Playfair Display', serif;
+        font-size: 100%;
+    }
+
+    #searchBar {
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 5;
+        background-color: rgba(0, 0, 0, 0.994);
+        grid-template-rows: 33% 33% 33%;
+        display: grid;
+        padding-right: 5%;
+    }
+
+    #searchButton {
+        justify-self: right;
+        grid-row: 2 / span 1;
+
+    }
+
+    #article1 {
+        grid-row: 4 / span 2;
+        grid-column: 2 / span 1;
+
+    }
+
+    #article2 {
+        grid-row: 4 / span 2;
+        grid-column: 3 / span 1;
+    }
+
+    #article3 {
+        grid-row: 4 / span 2;
+        grid-column: 4 / span 1;
+    }
+
+    #article4 {
+        grid-row: 4 / span 2;
+        grid-column: 5 / span 1;
+    }
+
+    figure {
+        display: block;
+        margin-block-start: 0.5rem;
+        margin-block-end: 0.5rem;
+        margin-inline-start: 10px;
+        margin-inline-end: 10px;
+    }
+
+    .article>figure>img {
+        width: 100%;
+        height: auto;
+    }
+
+    figcaption {
+        font-size: 13pt;
+    }
+
+    section h2,
+    p {
+        font-size: 17pt;
+        margin-inline-start: 10px;
+        margin-inline-end: 10px;
+    }
+
+    section h2 {
+        font-size: 20pt;
+        color: black;
+    }
+
+    .article {
+        background-color: rgb(175, 37, 37);
+        position: relative;
+        overflow-y: auto;
+    }
+
+    .article p {
+        position: absolute;
+    }
+
+    .article:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .grey {
+        background-color: rgba(93, 91, 91, 0.947);
+    }
+
+    footer {
+        grid-row: 6 / span 1;
+        grid-column: 1 / span 5;
+        background-color: black;
+        font-size: 35pt;
+        position: relative;
+        bottom: 0px;
+
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 10% repeat(15, 6%);
+
+    }
+
+    footer>div {
+        justify-self: center;
+        align-self: center;
+    }
+
+    #facebooklogo {
+        grid-column: 14 / span 1;
+
+    }
+
+    #twitterlogo {
+        grid-column: 15/ span 1;
+    }
+
+    #instagramlogo {
+        grid-column: 16 / span 1;
+    }
+
+    @media only screen and (min-width : 701px) and (max-width : 1280px) {
+
+        #mainContainer {
+            display: grid;
+            height: 200vh;
+            grid-template-rows: 20vh 100vh 10vh 60vh;
+            grid-template-columns: 25vw 25vw 25vw 25vw;
+        }
+
+        aside {
+            grid-row: 1;
+            grid-column: 1 / span 4;
+            display: grid;
+            grid-template-columns: 20% repeat(4, 20%);
+            grid-template-rows: 30% 30% 40%;
+            font-size: 25pt;
+
+
+        }
+
+        #bullslogo {
+            grid-column: 1 / span 1;
+            height: 18vh;
+            width: 18vh;
+            border-radius: 50%;
+            align-self: normal;
+            justify-self: center;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            /* padding-top: 3%; */
+            /* padding-left: 10%; */
+
+
+        }
+
+
+
+        aside~a {
+            text-align: center;
+
+
+        }
+
+        aside>a>span>i {
+            grid-row: 1 / span 1;
+            position: relative;
+            left: 30%;
+
+
+        }
+
+        aside>a {
+            align-self: center;
+            width: 50%;
+        }
+
+
+
+        #team {
+            grid-row: 2 / span 1;
+            grid-column: 2/ span 1;
+        }
+
+        #schedule {
+
+            grid-row: 2 / span 1;
+            grid-column: 3 / span 1;
+
+        }
+
+        #news {
+
+            grid-row: 2 / span 1;
+            grid-column: 4 / span 1;
+        }
+
+        #tickets {
+            grid-row: 2 / span 1;
+            grid-column: 5 / span 1;
+        }
+
+        #showcase {
+            grid-row: 2 / span 2;
+            grid-column: 1 / span 4;
+            height: 100vh;
+            width: auto;
+            background-position: 70%;
+            background-size: cover;
+            font-size: larger;
+        }
+
+        #caption {
+            top: 45%;
+            left: 10%;
+        }
+
+        #searchBar {
+            grid-row: 3 / span 1;
+            grid-column: 1 / span 4;
+        }
+
+
+        #article1 {
+            grid-row: 4 / span 2;
+            grid-column: 1 / span 1;
+
+        }
+
+        #article2 {
+            grid-row: 4 / span 2;
+            grid-column: 2 / span 1;
+
+        }
+
+        #article3 {
+            grid-row: 4 / span 2;
+            grid-column: 3 / span 1;
+
+        }
+
+        #article4 {
+            grid-row: 4 / span 2;
+            grid-column: 4 / span 1;
+
+        }
+
+    }
+
+
+    @media only screen and (max-width : 700px) {
+
+        #mainContainer {
+            display: grid;
+            height: 320vh;
+            grid-template-rows: 15vh 30vh 50vh 20vh 50vh 50vh 50vh 50vh 20vh;
+            grid-template-columns: 25vw 25vw 25vw 25vw;
+        }
+
+        aside {
+            grid-row: 1 / span 2;
+            grid-column: 1 / span 4;
+            display: grid;
+            grid-template-rows: 15vh 30vh;
+            grid-template-columns: 25vw 25vw 25vw 25vw;
+            ;
+            padding-bottom: 20px;
+
+        }
+
+        aside>a>span>i {
+            padding-left: 5%;
+
+        }
+
+        #team {
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1;
+            align-self: center;
+            justify-self: center;
+        }
+
+        #schedule {
+            grid-row: 1 / span 1;
+            grid-column: 2 / span 1;
+
+
+        }
+
+        #news {
+            grid-row: 1 / span 1;
+            grid-column: 3 / span 1;
+
+        }
+
+        #tickets {
+            grid-row: 1 / span 1;
+            grid-column: 4 / span 1;
+
+        }
+
+        #bullslogo {
+            grid-row: 2 / span 1;
+            grid-column: 1 / span 4;
+            order: -1;
+            justify-self: center;
+            align-self: center;
+            margin-bottom: 5%
+        }
+
+        #showcase {
+            grid-row: 3 / span 1;
+            grid-column: 1 / span 4;
+            font-size: larger;
+            background-position: 65%;
+
+        }
+
+        #caption {
+            font-size: 20pt;
+            display: inline-block;
+            position: relative;
+            top: 15%;
+            left: 5%;
+
+        }
+
+        #searchBar {
+            grid-row: 4 / span 1;
+            grid-column: 1 / span 4;
+            font-size: 15pt;
+            text-align: center;
+        }
+
+        #article1 {
+            grid-row: 5 / span 1;
+            grid-column: 1 / span 4;
+        }
+
+        #article2 {
+            grid-row: 6 / span 1;
+            grid-column: 1 / span 4;
+        }
+
+        #article3 {
+            grid-row: 7 / span 1;
+            grid-column: 1 / span 4;
+        }
+
+        #article4 {
+            grid-row: 8 / span 1;
+            grid-column: 1 / span 4;
+        }
+
+        footer {
+            grid-row: 9 / span 1;
+            grid-column: 1 / span 4;
+            display: grid;
+            grid-template-rows: 100%;
+            grid-template-columns: 10% repeat(9, 10%);
+        }
+
+        footer>div {
+            justify-self: center;
+            align-self: center;
+        }
+
+        #facebooklogo {
+            grid-column: 7 / span 1;
+
+        }
+
+        #twitterlogo {
+            grid-column: 8/ span 1;
+        }
+
+        #instagramlogo {
+            grid-column: 9 / span 1;
+        }
+    }
